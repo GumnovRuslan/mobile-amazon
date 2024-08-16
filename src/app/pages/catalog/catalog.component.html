@@ -1,0 +1,40 @@
+<app-search></app-search>
+<app-banner
+  [data]="activeCatalog"
+/>
+
+<app-popular
+  [title]="popularTitle"
+>
+  <p *ngIf="!popularDevices.length; else products ">Not devise</p>
+  <ng-template #products>
+    <app-product-card-variation
+      *ngFor="let device of popularDevices"
+      [data]="device"
+    />
+  </ng-template>
+</app-popular>
+
+<app-slider
+  [gradient]="{top: '#31D6D0', bottom: '#dee2e1'}"
+>
+  <app-brand-card
+    *ngFor="let brand of avalibleBrands, let i = index"
+    type="slide"
+    [data]="brand"
+    (click)="setAvalibleBrand(brand.name, activeCatalog)"
+    [select]="i === brandIndex"
+  />
+</app-slider>
+
+
+<app-products>
+  <p *ngIf="!popularDevices.length; else productsNone ">Not devise</p>
+  <ng-template #productsNone>
+    <app-product-card-variation
+      *ngFor="let device of productsData"
+      [data]="device"
+      
+    />
+  </ng-template>
+</app-products>

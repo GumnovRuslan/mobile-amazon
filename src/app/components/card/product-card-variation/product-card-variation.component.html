@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card__inner">
+    <div class="card__image_container">
+      <div class="card__image_wrapper">
+        <img src="{{data.products[activeItem].ImageURL || 'assets/images/default-img-devise.png'}}" alt="" class="card__image">
+        <!-- {{data.products[activeItem].ImageURL || 'assets/images/default-img-devise.png'}} -->
+      </div>
+    </div>
+    <div class="card__content">
+      <p class="card__name">{{data.products[activeItem].FullName}}</p>
+      <p class="card__text">Could be worth
+        <span class="card__price">{{data.products[activeItem].CashValue}}</span>
+      </p>
+    </div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__variations">
+      <button class="card__variation" 
+        *ngFor="let variation of data.variations, let i = index"
+        [class.card__variation--select]="activeItem === i"
+        (click)="setActiveItem(i)"
+        >
+      {{variation}}
+      </button>
+    </div>
+    <a href="#" class="card__btn">Tradein Now</a>
+  </div>
+</div>

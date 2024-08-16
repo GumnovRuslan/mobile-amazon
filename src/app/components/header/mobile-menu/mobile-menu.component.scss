@@ -1,0 +1,60 @@
+.menu {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  // right: -100%;
+  right: 0;
+  height: calc(100vh - 145px);
+  width: 100%;
+  transition: .5s;
+  background: #F0F2F5;
+  border-top: 1px solid #000;
+  overflow: auto;
+  display: none;
+
+  &--active {
+    display: block;
+    // right: 0;
+  }
+
+  &__inner {
+  }
+
+  &__section {
+    padding: 14px 5px;
+  }
+
+  &__categories {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(120px, 157px));
+    column-gap: 8px;
+    row-gap: 15px;
+  }
+
+  &__brands {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 157px);
+    grid-template-rows: repeat(auto-fit, 116px);
+    column-gap: 8px;
+    row-gap: 15px;
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 362px;
+    margin: 0 auto;
+  }
+
+  &__product {
+    width: 100%;
+    padding: 12px 17px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 16px;
+    background: #fff;
+  }
+}

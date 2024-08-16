@@ -1,0 +1,56 @@
+.page {
+  padding: 20px 20px 50px;
+  background: #F0F2F5;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &__card {
+    padding: 23px 21px;
+    border-radius: 6px;
+
+    &:nth-child(1) {
+      background: #96a5e3;
+    }
+    &:nth-child(2) {
+      background: #c9e1cb;
+    }
+    &:nth-child(3) {
+      background: #9ec4fe;
+    }
+    &:nth-child(4) {
+      background: #e09fb6;
+    }
+    &:nth-child(5) {
+      background: #f08ef8;
+    }
+    &:nth-child(6) {
+      background: #f5b042;
+    }
+  }
+
+  &__card_title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000;
+  }
+
+  &__card_text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #000;
+  }
+}

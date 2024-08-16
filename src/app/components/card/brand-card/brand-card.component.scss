@@ -1,0 +1,24 @@
+.card {
+  width: 100%;
+  height: 100%;
+  max-width: 157px;
+  max-height: 207px;
+  min-height: 116px;
+  padding: 0;
+  border-radius: 8px;
+  background: #fff;
+
+  &-slide {
+    width: 157px;
+    height: 207px;
+  }
+
+  &--select {
+    border: 1px solid #db7a25;
+  }
+
+  &__image {
+    max-width: 124px;
+    object-fit: contain;
+  }
+}

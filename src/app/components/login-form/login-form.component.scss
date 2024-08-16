@@ -1,0 +1,32 @@
+.login {
+  
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  } 
+
+  &__link {
+    align-self: flex-end;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #000;
+  }
+
+  &__btn {
+
+  }
+}

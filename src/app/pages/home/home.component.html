@@ -1,0 +1,23 @@
+<app-search></app-search>
+<app-banner/>
+
+<app-slider>
+  <app-category-card
+    *ngFor="let category of categories"
+    [data]="category"
+    [link]="category.href"
+    class="category-card"
+  />
+</app-slider>
+
+<app-popular
+  [title]="'Our Most Popular Phones'"
+>
+  <p *ngIf="!popularDevices.length; else products ">Not devise</p>
+  <ng-template #products>
+    <app-product-card-variation
+      *ngFor="let device of popularDevices"
+      [data]="device"
+    />
+  </ng-template>
+</app-popular>

@@ -1,0 +1,16 @@
+.notification {
+  position: sticky;
+  top: 145px;
+  display: flex;
+  align-items: center;
+  min-height: 82px;
+  padding: 20px 23px;
+  background: #31D6D0;
+
+  &__product_name {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+  }
+}

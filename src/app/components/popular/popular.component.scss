@@ -1,0 +1,18 @@
+.popular {
+  margin: 37px 0;
+  padding: 0 14px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-style: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #000;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

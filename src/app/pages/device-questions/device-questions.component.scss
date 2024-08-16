@@ -1,0 +1,44 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 47px;
+  padding: 50px 20px 20px;
+
+  &__image_wrapper {
+    max-width: 318px;
+    aspect-ratio: 1/1;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__texts {
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #000;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.price {
+  padding: 0 20px 40px;
+
+  &__text {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  &__btn {
+    filter: grayscale(1);
+    height: 47px;
+  }
+}

@@ -1,0 +1,12 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 22px 20px;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

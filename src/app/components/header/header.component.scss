@@ -1,0 +1,80 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 -6px 10px 5px #00000080;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 23px 20px;
+    height: 80px;
+    background: #000;
+  }
+
+  &__logo_icon {
+    align-self: flex-end;
+    max-width: 100px;
+    max-height: 30px;
+  }
+
+  &__logo_ingram_wrapper {
+    align-self: center;
+    width: 117px;
+    height: 32px;
+  }
+
+  &__nav {
+    padding: 0 6.5px;
+    background: #F0F2F5;
+  }
+
+  &__nav_items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    color: #000;
+
+    &--active {
+      color: #02867c;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: currentColor;
+      }
+    }
+  }
+
+  &__nav_icon {
+    max-width: 27px;
+    max-height: 27px;
+  }
+
+  &__burger {
+
+  }
+}

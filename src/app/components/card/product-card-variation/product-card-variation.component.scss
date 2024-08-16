@@ -1,0 +1,98 @@
+.card {
+  padding: 10px 8px;
+  background: #F0F2F5;
+
+  &__inner {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 187px;
+    // min-height: 186px;
+  }
+
+  &__image_wrapper {
+    max-width: 128px;
+    aspect-ratio: 1/1;
+  }
+
+  &__image {
+    object-fit: contain;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__name {
+    text-wrap: wrap;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #000;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+  }
+
+  &__price {
+    font-size: 26px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__variations {
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__variation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 5px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fff;
+
+    &--select {
+      border-color: #db7a25;
+      background: #fff9f5;
+    }
+  }
+
+  &__btn {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 43px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: #000;
+    background: #fcd811;
+  }
+}

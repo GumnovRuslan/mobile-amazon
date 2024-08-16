@@ -1,0 +1,68 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 20px;
+
+  &--default,
+  &--hearables,
+  &--mobiles  {
+    color: #fff;
+  }
+
+  &--tablets,
+  &--wearables,
+  &--game-consoles,
+  &--laptops {
+    color: #000;
+  }
+
+  &--default, 
+  &--mobiles {
+    background: #1331AB;
+  }
+  
+  &--tablets {
+    background-color: #C9E1CB;
+  }
+  &--wearables {
+    background-color: #9EC4FE;
+  }
+  &--hearables {
+    background-color: #AB1348;
+  }
+  &--game-consoles {
+    background-color: #F08EF8;
+  }
+  &--laptops {
+    background-color: #F5B042;
+  }
+
+  &__content {
+    max-width: 200px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: inherit;
+    margin-bottom: 6px;
+  }
+
+  &__description {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: inherit;
+  }
+
+  &__image_wrapper {
+    flex: 1 0 auto;
+    max-width: 141px;
+    aspect-ratio: 1/1;
+    
+    img {
+      object-fit: contain;
+    }
+  }
+}

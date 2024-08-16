@@ -1,0 +1,47 @@
+<div class="menu" [class.menu--active]="step">
+  <div class="menu__inner">
+    <div class="menu__section menu__categories" *ngIf="step <= 1">
+      <app-category-card
+        *ngFor="let category of categories"
+        [data]="category"
+        (click)="setActiveCategory()"
+        />
+    </div>
+    <div class="menu__section menu__brands" *ngIf="step == 2">
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+      <app-brand-card></app-brand-card>
+    </div>
+    <div class="menu__section menu__products" *ngIf="step == 3">
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple IPAD 4TH GEN 128GB CELL & WIFI A1459</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+      <button class="menu__product">Apple iPad 1st Gen 16GB Cell</button>
+    </div>
+  </div>
+</div>
